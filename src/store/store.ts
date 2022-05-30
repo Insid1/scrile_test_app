@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import usersSlice from './quests/slice';
+import usersSlice from './users/slice';
 import interfaceSlice from './interface/slice';
 
 enum ReducerName {

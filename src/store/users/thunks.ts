@@ -9,7 +9,7 @@ IUser[],
 undefined,
 { rejectValue: string }
 >(
-  'quests/fetchQuests',
+  'users/fetchUsers',
   async (_, { rejectWithValue }) => {
     try {
       const response = await api.get(ApiRoutes.Users);

@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { fetchUsers } from 'store/users/thunks';
 
 const defaultUsernameExclusion = 'Delphine';
 
@@ -22,6 +23,11 @@ const interfaceSlice = createSlice({
     setUserNameFilterExclusion(state, action: PayloadAction<string>) {
       state.usernameFilterExclusion = action.payload;
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchUsers.fulfilled, (state) => {
+      state.isGetUsersActive = false;
+    });
   },
 });
 

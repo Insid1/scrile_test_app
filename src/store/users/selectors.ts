@@ -9,6 +9,8 @@ const selectIsUsersLoaded = (state: RootState) => state.QuestsData.isUsersLoaded
 
 const selectErrorMessage = (state: RootState) => state.QuestsData.errorMessage;
 
+const selectIsUsersFetching = (state: RootState) => state.QuestsData.isUsersFetching;
+
 const selectFilteredUsers = createCachedSelector(
   [selectUsers, selectUsernameFilterExclusion],
   (users, usernameFilter) => filterByUserNameExclude(users, usernameFilter),
@@ -18,5 +20,5 @@ const selectFilteredUsers = createCachedSelector(
 
 export {
   selectUsers, selectIsUsersLoaded,
-  selectErrorMessage, selectFilteredUsers,
+  selectErrorMessage, selectFilteredUsers, selectIsUsersFetching,
 };
