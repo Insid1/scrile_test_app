@@ -1,6 +1,6 @@
 function MainPage() {
   return (
-    <div>MainPage</div>
+    <button type="button">get users</button>
   );
 }
 

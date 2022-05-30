@@ -50,6 +50,9 @@ module.exports = {
     //   },
     // ],
     'no-param-reassign': 0,
+    'linebreak-style': 0,
+    'import/prefer-default-export': 'off',
+
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'react/react-in-jsx-scope': 'off',
     'import/extensions': [
