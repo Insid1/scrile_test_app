@@ -14,18 +14,15 @@ interface ICompany {
   bs: string
 }
 
-interface IUserForPost {
+interface IUser {
   id: number | string,
   phone: string,
   username: string,
   email: string,
-}
-
-interface IUser extends IUserForPost {
   address: IAddress,
   name: string,
   website: string,
   company: ICompany
 }
 
-export type { IUser, IUserForPost };
+export type { IUser };

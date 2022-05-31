@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Test app for Scrile
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Specification
 
-## Available Scripts
+### Задание для позиции джуниор “Medium”
 
-In the project directory, you can run:
+[Сылка на задание](https://docs.google.com/document/d/1G7d1rJTJ_nc507_GDlL_I5vZZH5jR72U8qwJoUbvGLQ/edit#)
 
-### `npm start`
+Создайте простую страницу html, на которой отображается пустой список и кнопка “Get Users”.
+Четкого повторения дизайна не требуется, но лучше, если он будет удобным и аккуратным.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Нажатие на кнопку “Get Users”:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Заполняет список пользователями, за исключением пользователя, username которого “Delphine” (он не должен попасть в список).
+- Деактивирует кнопку Get Users (кнопка не кликабельна, повторное получение доступно после обновления страницы)
+Список пользователей можно получить по адресу <https://jsonplaceholder.typicode.com/users>
 
-### `npm test`
+Элемент списка пользователей состоит из:
+Идентификационный Номер(id), Имя, Почтовый адрес, Телефон и кнопки Like.
+Нажатие на кнопку Like вызывает запрос на текущую страницу.
+В теле запроса должны быть:
+id отправителя
+время, когда была нажата кнопка Like
+данные пользователя, которому поставили лайк
+{
+  "id": ,
+  "name": "",
+  "username": "",
+  "email": "",
+  "phone": ""
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Для запуска приложения выполните команды
 
-### `npm run build`
+    1. npm install (Если nodePackages еще не установлены)
+    2. npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
