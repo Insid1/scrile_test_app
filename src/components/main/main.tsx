@@ -28,10 +28,10 @@ function MainPage() {
         </Button>
       </Container>
       <Container>
-        {(isUsersLoaded && <UserList />)}
-        {isFetching && !isUsersLoaded ? <Loader />
-          : (errorMessage && <Alert isError>{errorMessage}</Alert>)
-            || (<Alert>Empty List</Alert>)}
+        {(isUsersLoaded ? <UserList /> : <Alert>Empty List</Alert>)}
+        {isFetching && !isUsersLoaded
+          ? <Loader />
+          : (errorMessage && <Alert isError>{errorMessage}</Alert>)}
       </Container>
     </MainLayout>
   );
