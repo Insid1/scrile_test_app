@@ -1,5 +1,13 @@
 # Test app for Scrile
 
+Время выполнения задания:
+
+    10 часов
+
+Используемые технологии:
+
+    React, Redux + RTK, Axios, TypeScript, StyledComponents
+
 ## Specification
 
 ### Задание для позиции джуниор “Medium”
