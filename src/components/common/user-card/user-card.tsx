@@ -20,10 +20,13 @@ function UserCard({
   const handleClickLike: React.MouseEventHandler<HTMLButtonElement> = () => {
     setIsFetching(true);
     setIsLiked((prevState) => !prevState);
+
     const currentTime = new Date().toISOString();
-    api.post(ApiRoutes.Users, {
+
+    const sendingData = {
       id, username, email, phone, userId: myId, currentTime,
-    })
+    };
+    api.put(`${ApiRoutes.Users}${id}`, sendingData)
       .then(({ data }) => {
         console.log(data);
       })

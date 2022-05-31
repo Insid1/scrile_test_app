@@ -11,6 +11,11 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
 
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
 `;
 
 const Icon = styled(LikeIconFill)<IconProps>`
