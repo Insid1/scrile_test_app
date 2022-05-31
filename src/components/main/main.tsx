@@ -3,7 +3,7 @@ import {
 } from 'components/common/common';
 import { useAppDispatch, useAppSelector } from 'store/hooks/hooks';
 import { selectIsGetUsersActive } from 'store/interface/selectors';
-import { selectIsUsersFetching, selectIsUsersLoaded, selectUsers } from 'store/users/selectors';
+import { selectIsUsersFetching, selectIsUsersLoaded } from 'store/users/selectors';
 import { fetchUsers } from 'store/users/thunks';
 import UserList from './user-list/user-list';
 

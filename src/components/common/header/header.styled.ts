@@ -17,19 +17,12 @@ const HeaderWrapper = styled(Container)`
   align-items: center;
   justify-content: center;
   min-height: 74px;
-  padding-top: 10px;
-  padding-right: 33px;
-  padding-bottom: 10px;
-  padding-left: 32px;
+  padding: 10px 30px;
 `;
 
 const Logo = styled.a`
-  margin-right: 250px;
-  width: 40px;
-
-  @media (max-width: 1300px) {
-    margin-right: auto;
-  }
+  width: 35px;
+  margin-right: auto;
 `;
 
 const Image = styled.img``;

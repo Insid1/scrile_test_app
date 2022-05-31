@@ -22,7 +22,7 @@ const appTheme: DefaultTheme = {
     darkerGray: '#616161',
     pinkSwan: '#B8B8B8',
     teal: '#80cbc4',
-    pink: '#e91e6380',
+    pink: '#e91e63',
   },
 };
 
