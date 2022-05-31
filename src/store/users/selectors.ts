@@ -3,13 +3,13 @@ import { RootState } from 'store/store';
 import createCachedSelector from 're-reselect';
 import { filterByUserNameExclude } from 'utils/filter/user';
 
-const selectUsers = (state: RootState) => state.QuestsData.users;
+const selectUsers = (state: RootState) => state.UsersData.users;
 
-const selectIsUsersLoaded = (state: RootState) => state.QuestsData.isUsersLoaded;
+const selectIsUsersLoaded = (state: RootState) => state.UsersData.isUsersLoaded;
 
-const selectErrorMessage = (state: RootState) => state.QuestsData.errorMessage;
+const selectUsersGetErrorMessage = (state: RootState) => state.UsersData.errorMessage;
 
-const selectIsUsersFetching = (state: RootState) => state.QuestsData.isUsersFetching;
+const selectIsUsersFetching = (state: RootState) => state.UsersData.isUsersFetching;
 
 const selectFilteredUsers = createCachedSelector(
   [selectUsers, selectUsernameFilterExclusion],
@@ -20,5 +20,5 @@ const selectFilteredUsers = createCachedSelector(
 
 export {
   selectUsers, selectIsUsersLoaded,
-  selectErrorMessage, selectFilteredUsers, selectIsUsersFetching,
+  selectUsersGetErrorMessage, selectFilteredUsers, selectIsUsersFetching,
 };

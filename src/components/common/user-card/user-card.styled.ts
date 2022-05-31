@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  width: 100%;
   padding: 0 0.7em;
-  margin: 10px 0;
+  max-width: 900px;
+  margin: 10px auto;
   border: 2px solid ${({ theme }) => theme.color.primary};
   border-radius: 10px;
   display: flex;
@@ -14,14 +14,24 @@ const Wrapper = styled.div`
   &:hover {
     border: 2px solid ${({ theme }) => theme.color.teal};
   }
+
 `;
 
 const Field = styled.div`
   display: inline-flex;
+  flex: 1 0 40%;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: start;
+  justify-content: center;
   margin: 5px;
+
+  &:first-child {
+    flex: 0 1 10%;
+  }
+
+  &:last-child {
+    flex: 0 1 10%;
+    align-items: flex-end;
+  }
 `;
 
 export { Field, Wrapper };

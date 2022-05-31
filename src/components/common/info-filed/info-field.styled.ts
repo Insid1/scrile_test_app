@@ -3,6 +3,8 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: inline-block;
   padding: 0.5em 0;
+  display: flex;
+  flex-wrap: nowrap;
 `;
 
 const Label = styled.span`

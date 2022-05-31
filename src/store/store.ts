@@ -3,7 +3,7 @@ import usersSlice from './users/slice';
 import interfaceSlice from './interface/slice';
 
 enum ReducerName {
-  UsersData = 'QuestsData',
+  UsersData = 'UsersData',
   Interface = 'Interface',
 }
 

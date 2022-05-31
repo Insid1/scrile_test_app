@@ -4,4 +4,6 @@ const selectIsGetUsersActive = (state: RootState) => state.Interface.isGetUsersA
 
 const selectUsernameFilterExclusion = (state: RootState) => state.Interface.usernameFilterExclusion;
 
-export { selectIsGetUsersActive, selectUsernameFilterExclusion };
+const selectMyId = (state: RootState) => state.Interface.myId;
+
+export { selectIsGetUsersActive, selectUsernameFilterExclusion, selectMyId };
